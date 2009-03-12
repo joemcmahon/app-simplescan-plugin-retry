@@ -12,9 +12,10 @@ use strict;
 
 my \@accent;
 mech->retry("0");
+mech->agent_alias('Windows IE 6');
 page_like "http://perl.org/",
           qr/Perl/,
-          "branding [http://perl.org/] [/Perl/ should match]";
+          qq(branding [http://perl.org/] [/Perl/ should match]);
 
 EOS
   "-retry 11.5" => <<EOS,
@@ -24,9 +25,10 @@ use strict;
 
 my \@accent;
 mech->retry("11");
+mech->agent_alias('Windows IE 6');
 page_like "http://perl.org/",
           qr/Perl/,
-          "branding [http://perl.org/] [/Perl/ should match]";
+          qq(branding [http://perl.org/] [/Perl/ should match]);
 
 EOS
   "-retry 4" => <<EOS,
@@ -36,9 +38,10 @@ use strict;
 
 my \@accent;
 mech->retry("4");
+mech->agent_alias('Windows IE 6');
 page_like "http://perl.org/",
           qr/Perl/,
-          "branding [http://perl.org/] [/Perl/ should match]";
+          qq(branding [http://perl.org/] [/Perl/ should match]);
 
 EOS
   "-retry zonk" => <<EOS,
@@ -48,9 +51,10 @@ use strict;
 
 my \@accent;
 fail "retry count 'zonk' is not a number";
+mech->agent_alias('Windows IE 6');
 page_like "http://perl.org/",
           qr/Perl/,
-          "branding [http://perl.org/] [/Perl/ should match]";
+          qq(branding [http://perl.org/] [/Perl/ should match]);
 
 EOS
 );

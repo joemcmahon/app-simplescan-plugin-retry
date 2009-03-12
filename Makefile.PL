@@ -10,7 +10,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,
-        'App::SimpleScan'    => 0.21,
+        'App::SimpleScan'    => 0.31,
         'WWW::Mechanize::Plugin::Retry' => 0.02,
         'Scalar::Util' => 0,
     },

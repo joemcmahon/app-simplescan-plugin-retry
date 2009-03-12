@@ -11,10 +11,11 @@ use Test::WWW::Simple;
 use strict;
 
 my \@accent;
+mech->agent_alias('Windows IE 6');
 mech->retry("5");
 page_like "http://perl.org/",
           qr/Perl/,
-          "branding [http://perl.org/] [/Perl/ should match]";
+          qq(branding [http://perl.org/] [/Perl/ should match]);
 mech->retry("3");
 
 EOS
