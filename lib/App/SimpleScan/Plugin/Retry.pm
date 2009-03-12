@@ -1,6 +1,6 @@
 package App::SimpleScan::Plugin::Retry;
 
-our $VERSION = '0.02';
+our $VERSION = '1.00';
 
 use warnings;
 use strict;
@@ -57,7 +57,7 @@ App::SimpleScan::Plugin::Retry - implement retry pragma/command line option
 
 =head1 VERSION
 
-This document describes App::SimpleScan::Plugin::Retry version 0.01
+This document describes App::SimpleScan::Plugin::Retry version 1.00
 
 =head1 SYNOPSIS
 
@@ -159,7 +159,8 @@ None reported.
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
+This only retries fetch failures; a more flexible means of testing 
+"did it work?" is probably in order.
 
 Please report any bugs or feature requests to
 C<bug-app-simplescan-plugin-retry@rt.cpan.org>, or through the web interface at
@@ -173,7 +174,8 @@ Joe McMahon  C<< <mcmahon@cpan.org > >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2005, Joe McMahon C<< <mcmahon@cpan.org > >>. All rights reserved.
+Copyright (c) 2005, 2006 Yahoo! and 
+Joe McMahon C<< <mcmahon@cpan.org > >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
