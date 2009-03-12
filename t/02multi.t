@@ -10,7 +10,6 @@ use Test::More tests=>1;
 use Test::WWW::Simple;
 use strict;
 
-my \@accent;
 mech->agent_alias('Windows IE 6');
 mech->retry("5");
 page_like "http://perl.org/",

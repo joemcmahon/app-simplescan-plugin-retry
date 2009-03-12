@@ -10,7 +10,6 @@ use Test::More tests=>0;
 use Test::WWW::Simple;
 use strict;
 
-my \@accent;
 mech->agent_alias('Windows IE 6');
 mech->retry("0");
 
@@ -20,7 +19,6 @@ use Test::More tests=>0;
 use Test::WWW::Simple;
 use strict;
 
-my \@accent;
 mech->agent_alias('Windows IE 6');
 mech->retry("4");
 
@@ -30,7 +28,6 @@ use Test::More tests=>1;
 use Test::WWW::Simple;
 use strict;
 
-my \@accent;
 mech->agent_alias('Windows IE 6');
 fail "retry count 'zonk' is not a number";
 
@@ -40,7 +37,6 @@ use Test::More tests=>0;
 use Test::WWW::Simple;
 use strict;
 
-my \@accent;
 mech->agent_alias('Windows IE 6');
 mech->retry("3");
 

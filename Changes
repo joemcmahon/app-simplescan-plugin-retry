@@ -1,4 +1,6 @@
 Revision history for App-SimpleScan-Plugin-Retry
+1.02  Wed Aug  2 13:22:23 PDT 2006
+	- remove @accent from tests
 
 1.01  Mon Apr 10 09:59:21 PDT 2006
 	- failed upload; trying again
